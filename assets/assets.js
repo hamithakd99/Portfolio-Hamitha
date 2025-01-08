@@ -87,13 +87,13 @@ export const assets = {
 export const workData = [
     {
         title: 'Portfolio Design',
-        description: 'Next Js, Tailwind css',
+        description: 'Next.Js, Tailwind CSS',
         bgImage: '/work-1.png',
         link: 'https://github.com/hamithakd99/Portfolio-Hamitha',
     },
     {
         title: 'Strength E-Commerce',
-        description: 'React Js, Tailwind css',
+        description: 'ReactJs, Tailwind CSS',
         bgImage: '/work-2.png',
         link: 'https://github.com/hamithakd99/STRENTH-E-Commerce',
     },
@@ -105,7 +105,7 @@ export const workData = [
     },
     {
         title: 'Digital Clock',
-        description: 'Javascript',
+        description: 'Html, CSS, Js',
         bgImage: '/work-4.png',
         link: '',
     },
