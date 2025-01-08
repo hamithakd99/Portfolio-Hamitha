@@ -35,8 +35,16 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import ai from './Ai.png';
+import github from './github.png';
+import postman from './postman.png';
+import ps from './ps.png';
 
 export const assets = {
+    ai,
+    github,
+    postman,
+    ps,
     user_image,
     code_icon,
     code_icon_dark,
@@ -113,5 +121,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.postman, assets.github, assets.ps, assets.ai
 ];
