@@ -86,24 +86,28 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Portfolio Design',
+        description: 'Next Js, Tailwind css',
         bgImage: '/work-1.png',
+        link: 'https://github.com/hamithakd99/Portfolio-Hamitha',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Strength E-Commerce',
+        description: 'React Js, Tailwind css',
         bgImage: '/work-2.png',
+        link: 'https://github.com/hamithakd99/STRENTH-E-Commerce',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'AgriCure Project',
+        description: 'React-Vite, Bootstrap',
         bgImage: '/work-3.png',
+        link: 'https://github.com/hamithakd99/AgriCure-Project',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Digital Clock',
+        description: 'Javascript',
         bgImage: '/work-4.png',
+        link: '',
     },
 ]
 
