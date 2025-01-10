@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div>
       <div className="text-center">
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-3xl font-bold mb-5 md:mb-3">
           Hamitha<span className="text-red-700 text-5xl">.</span>
         </h1>
         <div className="flex w-max items-center gap-2 mx-auto">
