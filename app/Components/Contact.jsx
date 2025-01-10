@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-[length:90%_auto]'
+      className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png dark:bg-none")] bg-no-repeat bg-[length:90%_auto]'
     >
       <h4 className="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
       <h2 className="text-center text-5xl font-Ovo">Get in touch</h2>
@@ -46,14 +46,14 @@ const Contact = () => {
             name="name"
             placeholder="Enter Your name"
             required
-            className="p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white w-full"
+            className="p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white w-full dark:bg-darkHover/30 dark:border-white/90"
           />
           <input
             type="email"
             name="email"
             placeholder="Enter Your email"
             required
-            className="p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white w-full"
+            className="p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white w-full dark:bg-darkHover/30 dark:border-white/90"
           />
         </div>
         <textarea
@@ -62,11 +62,11 @@ const Contact = () => {
           id=""
           placeholder="Enter Your message"
           required
-          className="resize-none w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+          className="resize-none w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"
         ></textarea>
         <button
           type="submit"
-          className="border border-gray-400 px-6 py-4 rounded-full w-max bg-black/80 text-white flex items-center mx-auto hover:bg-black duration-500"
+          className="border border-gray-400 px-6 py-4 rounded-full w-max bg-black/80 text-white flex items-center mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover"
         >
           Submit Now{" "}
           <Image src={assets.right_arrow_white} alt="" className="w-4 ml-5" />
