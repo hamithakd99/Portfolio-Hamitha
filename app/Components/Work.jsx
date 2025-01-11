@@ -2,27 +2,63 @@ import { assets, workData } from "@/assets/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "motion/react";
 
 const Work = () => {
   return (
-    <div id="mywork" className="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 className="text-center mb-2 text-lg font-Ovo">My Portfolio</h4>
-      <h2 className="text-center text-5xl font-Ovo">My Latest Work</h2>
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id="mywork"
+      className="w-full px-[12%] py-10 scroll-mt-20"
+    >
+      <motion.h4
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.3, delay: 0.5 }}
+        className="text-center mb-2 text-lg font-Ovo"
+      >
+        My Portfolio
+      </motion.h4>
+      <motion.h2
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="text-center text-5xl font-Ovo"
+      >
+        My Latest Work
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
+      >
         Welcome to My Web Development Portfolio! Explore my collection of
         projects showcasing my experiences in FrontEnd development
-      </p>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 my-10 gap-5">
+      </motion.p>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
+        className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 my-10 gap-5"
+      >
         {workData.map((projects, index) => (
           <Link key={index} href={`${projects.link}`}>
-            <div
+            <motion.div
+              
+              whileInView={{scale: 1.04}}
+              transition={{ duration: 0.3}}
               className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
               key={index}
               style={{ backgroundImage: `url(${projects.bgImage})` }}
             >
               <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 text-sm">
                 <div>
-                  <h2 className="font-semibold dark:text-black">{projects.title}</h2>
+                  <h2 className="font-semibold dark:text-black">
+                    {projects.title}
+                  </h2>
                   <p className="text-gray-700">{projects.description}</p>
                 </div>
                 <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -33,11 +69,11 @@ const Work = () => {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
           </Link>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
